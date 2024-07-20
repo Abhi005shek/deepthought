@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>DeepThought</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img
+          src="https://deepthought.education/assets/images/logo/logo.svg"
+          alt=""
+        />
+      </div>
+
+      <nav>
+        <ul>
+          <li>
+            <svg
+              width="30"
+              height="33"
+              viewBox="0 0 30 33"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <ellipse cx="15" cy="16.183" rx="15" ry="16.183" fill="#3683F0" />
+              <path
+                d="M15.2031 11.7139L9.8125 16.167V20.9424C9.8125 21.2061 10.0176 21.4111 10.2812 21.4111H13.5625C13.7969 21.4111 14.002 21.2061 14.002 20.9424V18.1299C14.002 17.8955 14.2363 17.6611 14.4707 17.6611H16.3457C16.6094 17.6611 16.8145 17.8955 16.8145 18.1299V20.9424C16.8145 21.2061 17.0488 21.4111 17.2832 21.4111H20.5938C20.8281 21.4111 21.0625 21.2061 21.0625 20.9424V16.1377L15.6426 11.7139C15.584 11.6553 15.4961 11.626 15.4375 11.626C15.3496 11.626 15.2617 11.6553 15.2031 11.7139ZM23.7285 14.7314L21.2969 12.71V8.66699C21.2969 8.46191 21.1211 8.31543 20.9453 8.31543H19.3047C19.0996 8.31543 18.9531 8.46191 18.9531 8.66699V10.7764L16.3164 8.6084C16.082 8.43262 15.7598 8.31543 15.4375 8.31543C15.0859 8.31543 14.7637 8.43262 14.5293 8.6084L7.11719 14.7314C7.0293 14.79 6.9707 14.9072 6.9707 14.9951C6.9707 15.083 7.0293 15.1709 7.05859 15.2295L7.82031 16.1377C7.87891 16.2256 7.9668 16.2549 8.08398 16.2549C8.17188 16.2549 8.25977 16.2256 8.31836 16.167L15.2031 10.5127C15.2617 10.4541 15.3496 10.4248 15.4375 10.4248C15.4961 10.4248 15.584 10.4541 15.6426 10.5127L22.5273 16.167C22.5859 16.2256 22.6738 16.2549 22.7617 16.2549C22.8789 16.2549 22.9668 16.2256 23.0254 16.1377L23.7871 15.2295C23.8457 15.1709 23.875 15.083 23.875 14.9951C23.875 14.9072 23.8164 14.79 23.7285 14.7314Z"
+                fill="white"
+              />
+            </svg>
+          </li>
+          <li>
+            <svg
+              width="30"
+              height="33"
+              viewBox="0 0 30 33"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <ellipse cx="15" cy="16.183" rx="15" ry="16.183" fill="#3683F0" />
+              <path
+                d="M22.6777 18.9502L19.25 15.5225C18.5469 14.8486 17.5508 14.7021 16.7305 15.1123L13.625 12.0068V10.1611L9.875 7.34863L8 9.22363L10.8125 12.9736H12.6289L15.7344 16.1084C15.3535 16.9287 15.4707 17.9248 16.1445 18.5986L19.5723 22.0557C20.0117 22.4658 20.6855 22.4658 21.125 22.0557L22.6777 20.5029C23.0879 20.0635 23.0879 19.3896 22.6777 18.9502ZM17.6973 13.9404C18.5469 13.9404 19.3086 14.2627 19.8945 14.8486L20.4805 15.4346C20.9199 15.2295 21.3594 14.9365 21.7402 14.5557C22.8242 13.4717 23.2051 11.9482 22.8535 10.5713C22.7949 10.3076 22.4727 10.2197 22.2676 10.3955L20.0996 12.5928L18.1074 12.2412L17.7852 10.249L19.9531 8.08105C20.1582 7.87598 20.041 7.55371 19.7773 7.49512C18.4004 7.14355 16.877 7.52441 15.793 8.6084C14.9434 9.42871 14.5625 10.542 14.5625 11.626L16.9941 14.0283C17.2285 13.9697 17.4629 13.9404 17.6973 13.9404ZM14.6504 16.3428L13.0098 14.7021L8.52734 19.1553C7.79492 19.8877 7.79492 21.0889 8.52734 21.8213C9.25977 22.5537 10.4609 22.5537 11.1934 21.8213L14.7969 18.1885C14.5918 17.6025 14.5039 16.9873 14.6504 16.3428ZM9.875 21.1768C9.46484 21.1768 9.17188 20.8838 9.17188 20.4736C9.17188 20.0928 9.46484 19.7705 9.875 19.7705C10.2559 19.7705 10.5781 20.0928 10.5781 20.4736C10.5781 20.8838 10.2559 21.1768 9.875 21.1768Z"
+                fill="white"
+              />
+            </svg>
+          </li>
+          <li>
+            <svg
+              width="33"
+              height="34"
+              viewBox="0 0 33 34"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <ellipse
+                cx="15.576"
+                cy="17.1658"
+                rx="15.1346"
+                ry="16.2586"
+                fill="white"
+              />
+              <path
+                d="M16.576 0.433594C7.98751 0.433594 1 7.94002 1 17.1664C1 26.3928 7.98751 33.8992 16.576 33.8992C25.1646 33.8992 32.1521 26.3928 32.1521 17.1664C32.1521 7.94002 25.1646 0.433594 16.576 0.433594ZM16.576 27.4635C15.011 27.4635 13.7664 26.7507 13.5994 25.2448C13.595 25.1998 13.5994 25.1543 13.6125 25.1113C13.6255 25.0682 13.6469 25.0286 13.6752 24.9951C13.7034 24.9615 13.738 24.9347 13.7765 24.9165C13.8151 24.8983 13.8568 24.889 13.8989 24.8892H19.2494C19.292 24.8889 19.3341 24.8983 19.373 24.9168C19.4119 24.9354 19.4467 24.9626 19.475 24.9967C19.5034 25.0308 19.5246 25.071 19.5374 25.1146C19.5501 25.1582 19.5541 25.2042 19.549 25.2496C19.358 26.7274 18.1247 27.4635 16.576 27.4635ZM23.9148 23.6021H9.23733C8.3507 23.6021 7.88941 22.3954 8.39937 21.7518C9.62224 20.196 10.4864 19.542 10.4864 15.2518C10.4864 11.3204 12.4139 9.92543 14.006 9.24486C14.1156 9.19581 14.2143 9.12265 14.296 9.0301C14.3776 8.93754 14.4403 8.82764 14.48 8.70748C14.7563 7.72201 15.5381 6.86928 16.576 6.86928C17.614 6.86928 18.3943 7.72201 18.6728 8.70828C18.7128 8.82843 18.7756 8.93828 18.8574 9.03082C18.9391 9.12336 19.038 9.19653 19.1476 9.24566C20.7359 9.92463 22.6672 11.322 22.6672 15.2526C22.6672 19.5428 23.5306 20.1968 24.7535 21.7526C25.2582 22.3954 24.7962 23.6021 23.9148 23.6021Z"
+                fill="#3683F0"
+              />
+              <ellipse
+                cx="23.1349"
+                cy="11.2048"
+                rx="3.53143"
+                ry="3.79367"
+                fill="#FF2C55"
+              />
+            </svg>
+          </li>
+
+          <li><img src="./images/Ellipse 53.png" alt="" /></li>
+
+          <li>
+            <div class="three-dots">
+              <svg
+                width="4"
+                height="15"
+                viewBox="0 0 4 15"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <ellipse
+                  cx="1.51347"
+                  cy="1.49619"
+                  rx="1.51347"
+                  ry="1.49619"
+                  fill="#3683F0"
+                />
+                <ellipse
+                  cx="1.51347"
+                  cy="7.48057"
+                  rx="1.51347"
+                  ry="1.49619"
+                  fill="#3683F0"
+                />
+                <ellipse
+                  cx="1.51347"
+                  cy="13.4659"
+                  rx="1.51347"
+                  ry="1.49619"
+                  fill="#3683F0"
+                />
+              </svg>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="sidebar">
+        <div class="subsidebar-one">
+          <p>
+
+            <span>Journey Board</span>
+
+            <span class="sidebar-arrow">
+            <svg
+              width="39"
+              height="29"
+              viewBox="0 0 39 29"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <rect width="39" height="29" fill="url(#pattern0_44284_16)" />
+              <defs>
+                <pattern
+                  id="pattern0_44284_16"
+                  patternContentUnits="objectBoundingBox"
+                  width="1"
+                  height="1"
+                >
+                  <use
+                    xlink:href="#image0_44284_16"
+                    transform="matrix(0.015625 0 0 0.0210129 0 -0.0673491)"
+                  />
+                </pattern>
+                <image
+                  id="image0_44284_16"
+                  width="64"
+                  height="54"
+                  xlink:href="data:image/png;base64,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"
+                />
+              </defs>
+            </svg>
+            </span>
+          </p>
+        </div>
+        <div class="subsidebar-two">
+          <ul>
+            <li class="task-title">Explore the world of management</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="sidebar-right">
+        <div>
+          <svg width="34" height="38" viewBox="0 0 34 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M26.8333 17L7 36.8333M26.8333 36.8333L7 17" stroke="white" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          <p>Notice &nbsp;&nbsp; Board</p>
+            
+        </div>
+      </div>
+
+      <main>
+        <div class="title-wrapper">
+          <h2>Technical Project Management</h2>
+          <button>Submit Task</button>
+        </div>
+
+        <div class="description">
+            <h3>Explore the world of management<h3>
+            <p>As a project manager, you play an important reole in leading a project through initiation, planning, execution, monitoring, controlling and completion. How? Do you want to manage each and every step of your life?</p>
+        </div>
+
+        <div class="content-wrapper">
+            <!-- <div class="content">
+                <div class="content-title">
+
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="11" cy="11" r="11" fill="transparent"/>
+                        <path d="M9.752 16L9.656 15.376C10.1787 15.2693 10.4933 15.1627 10.6 15.056C10.7173 14.9387 10.776 14.7413 10.776 14.464V9.872C10.776 9.648 10.6907 9.488 10.52 9.392C10.3493 9.28533 10.0293 9.184 9.56 9.088L9.656 8.576C10.7973 8.42667 11.592 8.352 12.04 8.352L12.216 8.512V14.848C12.216 14.976 12.2427 15.0613 12.296 15.104C12.36 15.136 12.44 15.1627 12.536 15.184L13.32 15.376L13.256 16H9.752ZM12.232 5.504C12.232 5.77067 12.1467 5.99467 11.976 6.176C11.816 6.35733 11.5973 6.448 11.32 6.448C11.0533 6.448 10.8293 6.368 10.648 6.208C10.4773 6.048 10.392 5.82933 10.392 5.552C10.392 5.264 10.472 5.03467 10.632 4.864C10.8027 4.69333 11.032 4.608 11.32 4.608C11.928 4.608 12.232 4.90667 12.232 5.504Z" fill="black"/>
+                        </svg>
+
+                    <p>Technical Project Management</p>
+
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="11" cy="11" r="11" fill="white"/>
+                        <path d="M9.752 16L9.656 15.376C10.1787 15.2693 10.4933 15.1627 10.6 15.056C10.7173 14.9387 10.776 14.7413 10.776 14.464V9.872C10.776 9.648 10.6907 9.488 10.52 9.392C10.3493 9.28533 10.0293 9.184 9.56 9.088L9.656 8.576C10.7973 8.42667 11.592 8.352 12.04 8.352L12.216 8.512V14.848C12.216 14.976 12.2427 15.0613 12.296 15.104C12.36 15.136 12.44 15.1627 12.536 15.184L13.32 15.376L13.256 16H9.752ZM12.232 5.504C12.232 5.77067 12.1467 5.99467 11.976 6.176C11.816 6.35733 11.5973 6.448 11.32 6.448C11.0533 6.448 10.8293 6.368 10.648 6.208C10.4773 6.048 10.392 5.82933 10.392 5.552C10.392 5.264 10.472 5.03467 10.632 4.864C10.8027 4.69333 11.032 4.608 11.32 4.608C11.928 4.608 12.232 4.90667 12.232 5.504Z" fill="black"/>
+                        </svg>
+                        
+                </div>
+
+                <div class="content-description">
+                  <p><span>Description: </span><span>Story of Alignment Scope of Agility Specific Accountable Staggering Approach</span></p>
+              </div>
+                
+            </div> -->
+
+            <!-- <div class="content">
+                <div class="content-title">
+
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="11" cy="11" r="11" fill="transparent"/>
+                        <path d="M9.752 16L9.656 15.376C10.1787 15.2693 10.4933 15.1627 10.6 15.056C10.7173 14.9387 10.776 14.7413 10.776 14.464V9.872C10.776 9.648 10.6907 9.488 10.52 9.392C10.3493 9.28533 10.0293 9.184 9.56 9.088L9.656 8.576C10.7973 8.42667 11.592 8.352 12.04 8.352L12.216 8.512V14.848C12.216 14.976 12.2427 15.0613 12.296 15.104C12.36 15.136 12.44 15.1627 12.536 15.184L13.32 15.376L13.256 16H9.752ZM12.232 5.504C12.232 5.77067 12.1467 5.99467 11.976 6.176C11.816 6.35733 11.5973 6.448 11.32 6.448C11.0533 6.448 10.8293 6.368 10.648 6.208C10.4773 6.048 10.392 5.82933 10.392 5.552C10.392 5.264 10.472 5.03467 10.632 4.864C10.8027 4.69333 11.032 4.608 11.32 4.608C11.928 4.608 12.232 4.90667 12.232 5.504Z" fill="black"/>
+                        </svg>
+
+                    <p>Technical Project Management</p>
+
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="11" cy="11" r="11" fill="white"/>
+                        <path d="M9.752 16L9.656 15.376C10.1787 15.2693 10.4933 15.1627 10.6 15.056C10.7173 14.9387 10.776 14.7413 10.776 14.464V9.872C10.776 9.648 10.6907 9.488 10.52 9.392C10.3493 9.28533 10.0293 9.184 9.56 9.088L9.656 8.576C10.7973 8.42667 11.592 8.352 12.04 8.352L12.216 8.512V14.848C12.216 14.976 12.2427 15.0613 12.296 15.104C12.36 15.136 12.44 15.1627 12.536 15.184L13.32 15.376L13.256 16H9.752ZM12.232 5.504C12.232 5.77067 12.1467 5.99467 11.976 6.176C11.816 6.35733 11.5973 6.448 11.32 6.448C11.0533 6.448 10.8293 6.368 10.648 6.208C10.4773 6.048 10.392 5.82933 10.392 5.552C10.392 5.264 10.472 5.03467 10.632 4.864C10.8027 4.69333 11.032 4.608 11.32 4.608C11.928 4.608 12.232 4.90667 12.232 5.504Z" fill="black"/>
+                        </svg>
+                        
+                </div>
+                <div class="content-description">
+                    <p><span>Description: </span><span>Watch the video and threadbuild, and jot out key threads while watching the video</span></p>
+                </div>
+            </div> -->
+
+
+            <!-- <div class="content">
+              <div class="content-title">
+
+                  <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="11" cy="11" r="11" fill="transparent"/>
+                      <path d="M9.752 16L9.656 15.376C10.1787 15.2693 10.4933 15.1627 10.6 15.056C10.7173 14.9387 10.776 14.7413 10.776 14.464V9.872C10.776 9.648 10.6907 9.488 10.52 9.392C10.3493 9.28533 10.0293 9.184 9.56 9.088L9.656 8.576C10.7973 8.42667 11.592 8.352 12.04 8.352L12.216 8.512V14.848C12.216 14.976 12.2427 15.0613 12.296 15.104C12.36 15.136 12.44 15.1627 12.536 15.184L13.32 15.376L13.256 16H9.752ZM12.232 5.504C12.232 5.77067 12.1467 5.99467 11.976 6.176C11.816 6.35733 11.5973 6.448 11.32 6.448C11.0533 6.448 10.8293 6.368 10.648 6.208C10.4773 6.048 10.392 5.82933 10.392 5.552C10.392 5.264 10.472 5.03467 10.632 4.864C10.8027 4.69333 11.032 4.608 11.32 4.608C11.928 4.608 12.232 4.90667 12.232 5.504Z" fill="black"/>
+                      </svg>
+
+                  <p>Technical Project Management</p>
+
+                  <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="11" cy="11" r="11" fill="white"/>
+                      <path d="M9.752 16L9.656 15.376C10.1787 15.2693 10.4933 15.1627 10.6 15.056C10.7173 14.9387 10.776 14.7413 10.776 14.464V9.872C10.776 9.648 10.6907 9.488 10.52 9.392C10.3493 9.28533 10.0293 9.184 9.56 9.088L9.656 8.576C10.7973 8.42667 11.592 8.352 12.04 8.352L12.216 8.512V14.848C12.216 14.976 12.2427 15.0613 12.296 15.104C12.36 15.136 12.44 15.1627 12.536 15.184L13.32 15.376L13.256 16H9.752ZM12.232 5.504C12.232 5.77067 12.1467 5.99467 11.976 6.176C11.816 6.35733 11.5973 6.448 11.32 6.448C11.0533 6.448 10.8293 6.368 10.648 6.208C10.4773 6.048 10.392 5.82933 10.392 5.552C10.392 5.264 10.472 5.03467 10.632 4.864C10.8027 4.69333 11.032 4.608 11.32 4.608C11.928 4.608 12.232 4.90667 12.232 5.504Z" fill="black"/>
+                      </svg>
+                      
+              </div>
+              <div class="content-description">
+                  <p><span>Description: </span><span>Watch the video and threadbuild, and jot out key threads while watching the video</span></p>
+              </div>
+          </div>
+
+        </div> -->
+
+        <div class="options">
+          <ul>
+            <li>
+              <img width='37' height="40" src="./images/schedule (3).png" alt="">
+            </li>
+
+            <li>
+              <img width='46' height="46" src="./images/schedule (2).png" alt="">
+                
+            </li>
+ 
+            <li>
+              <img width='50' height="50" src="./images/schedule (1).png" alt="">
+                
+            </li>
+
+          </ul>
+        </div>
+      </main>
+    </div>
+
+    <script type="module" src="helper.js"></script>
+    <script type='module' src="script.js"></script>
+  </body>
+</html>
